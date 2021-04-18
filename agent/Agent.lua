@@ -671,7 +671,7 @@ function Agent:act(state, visible)
                             -- If there's nothing else to do, and belly is even somewhat low,
                             -- we might as well eat something (provided we're not being wasteful)
                             if smartactions.eatFoodIfHungry(availableInfo, leader.belly,
-                                leader.maxBelly, leader.maxBelly - 50, false, true) then
+                                leader.maxBelly, leader.maxBelly - 90, false, true) then
                                 return
                             end
                         end
@@ -762,10 +762,10 @@ function Agent:act(state, visible)
         if smartactions.eatFoodIfBellyEmpty(availableInfo, leader.belly, true) then
             return
         end
-        -- Eat food if belly is low (50 below max), there's food in the bag, and it can
+        -- Eat food if belly is low (90 below max), there's food in the bag, and it can
         -- be done without being wasteful
         if smartactions.eatFoodIfHungry(availableInfo, leader.belly,
-            leader.maxBelly, leader.maxBelly - 50, false, true) then
+            leader.maxBelly, leader.maxBelly - 90, false, true) then
             return
         end
 
