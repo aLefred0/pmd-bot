@@ -11,8 +11,7 @@ local Agent = require 'agent.Agent'
 -- Confirm that the version is supported
 versioninfo.validateVersion()
 
--- Temporarily set the leader's nickname to "Lua"
-nicknames.setLeaderNicknameTemp('Lua')
+
 
 -- The state
 local state = stateinfo.state
