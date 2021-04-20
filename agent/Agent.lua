@@ -788,11 +788,11 @@ function Agent:act(state, visible)
 
             -- If PP is low, use a Max Elixir if possible
             -- "Low PP" means if 25% or less (rounded) of offensive moves still have PP
-            local nOffensiveMovesWithPP, nOffensiveMoves = moveLogic.checkOffensiveMoves(leader.moves)
-            if nOffensiveMovesWithPP <= mathutils.round(0.25 * nOffensiveMoves) and
-                smartactions.useMaxElixirIfPossible(availableInfo, true) then
-                return
-            end
+            --local nOffensiveMovesWithPP, nOffensiveMoves = moveLogic.checkOffensiveMoves(leader.moves)
+            --if nOffensiveMovesWithPP <= mathutils.round(0.25 * nOffensiveMoves) and
+                --smartactions.useMaxElixirIfPossible(availableInfo, true) then
+                --return
+            --end
         end
     end
 
